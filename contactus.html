@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ContactUs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!-- FONTS -->     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Font Awesome Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Materialized CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <style>
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img4.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+  </style>
+
+  <body>
+    <div class="row navbar-fixed">
+      <nav class="white">
+        <div class="nav-wrapper">
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+          <a id="logo-container" href="#" class="brand-logo1">Elite Global Services</a> -->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html" class="navlink">Home</a></li>
+            <li><a href="aboutus.html" class="navlink">About Us</a></li>
+            <li><a href="contactus.html" class="navlink">Contact Us</a></li>
+            <li class="active"><a href="services.html" class="navlink">Services</a></li>
+            <li><a href="pastperformance.html" class="navlink">Past Performance</a></li>
+            <li><a href="blogs.html" class="navlink">Blogs</a></li>
+            <li><a href="faqs.html" class="navlink">FAQ's</a></li>
+          </ul>
+
+          <ul id="mobile-demo" class="side-nav">
+            <li><a id="logo-container" href="#" class="brand-logo1">Ellite Global Services</a></li>
+            <li class="divider"></li>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="aboutus.html" class="">About Us</a></li>
+            <li><a href="contactus.html" class="">Contact Us</a></li>
+            <li><a href="services.html" class="">Services</a></li>
+            <li><a href="#" class="">Past Performance</a></li>
+            <li><a href="#" class="">Blogs</a></li>
+            <li><a href="faqs.html" class="">FAQ's</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="slider fullscreen">
+      <ul class="slides">
+        <li>
+          <img src="https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://ununsplash.imgix.net/photo-1414849424631-8b18529a81ca?q=75&fm=jpg&s=0e993004a2f3704e8f2ad5469315ccb7"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://ununsplash.imgix.net/uploads/1413259835094dcdeb9d3/6e609595?q=75&fm=jpg&s=6a4fc66161293fc4a43a6ca6f073d1c5"> <!-- random image -->
+          <div class="caption right-align">
+            <h3>Right Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="container" style="margin-top:95vh;">
+        <div class = "row">
+           <div class = "col s12 m12 l12" class="center-align">
+              <div class = "card blue-grey lighten-4 black-text">
+                 <div class = "card-content"> 
+                  <div class="center-align contacttitle"><span class="blue-text text-lighten-2">C</span>ontact <span class="blue-text text-lighten-2">U</span>s</div>
+                  <hr/> 
+                    <div class = "row">
+                      <form class = "col s12">
+                        <div class = "row">
+                          <div class = "input-field col s12">  
+                            <i class="material-icons prefix">account_circle</i>               
+                            <input  id = "fname" type = "text" class = "active validate" required />
+                            <label for = "fname">First Name</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class = "input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>                
+                            <input id = "lname" type = "text" class = "active validate" required />
+                            <label for = "lname">Last Name</label>
+                          </div>
+                        </div>
+                        <div class = "row">
+                          <div class = "input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id = "email" type = "email" class = "validate" required />
+                            <label for = "email">Email</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class = "input-field col s12">
+                            <i class="material-icons prefix">phone</i>                
+                            <input id = "phone" type = "number" class = "active validate" required />
+                            <label for = "phone">Phone</label>
+                          </div>
+                        </div>
+                        <div class = "row">
+                          <div class = "input-field col s12">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id = "message" class = "materialize-textarea" data-length="500"></textarea>
+                            <label for = "message">Message</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col s12 m12 l12 ">
+                            <h5 class="center-align">
+                              <button type="submit" class="waves-effect waves-light btn black lighten-1 white-text" style="border-radius: 10px;font-size:26px;width: 150px;">
+                                Submit
+                              </button>
+                            </h5>
+                          </div>
+                        </div>           
+                      </form>       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <footer class="page-footer deep-orange lighten-1">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="black-text">Footer Content</h5>
+              <p class="black-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="black-text">Links</h5>
+              <ul>
+                <li><a class="black-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="black-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="black-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="black-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container black-text">
+          &copy 2018 Copyright Text
+          <a class="black-text right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+
+  </body>
+      <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+    });
+      $(document).ready(function(){
+    $('.slider').slider();
+    });
+    $(document).ready(function(){
+      Materialize.updateTextFeilds();
+    });
+         
+  </script>
+</html>

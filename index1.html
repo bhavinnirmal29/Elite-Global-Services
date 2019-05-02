@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!-- FONTS -->     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Font Awesome Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Materialized CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <style>
+    .square {
+      width: 250px;
+      height: 200px;
+      font-size: 25px;
+      border:2px solid black;
+      border-radius: 5px;
+      color: #fff;
+      line-height: 200px;
+      text-align: center;
+      background-color: black;
+      transition: 0.4s;
+    }
+    .square:hover{
+      opacity:0.8;
+      transform: rotate(180deg) scaleY(1);
+      transition:0.4s;
+    }
+       .flip-container {
+                    perspective: 1000px;
+                }
+                    /* flip the pane when hovered */
+                .flip-container:hover .flipper, .flip-container.hover .flipper {
+                        transform: rotateY(180deg);
+                    }
+                .flip-container, .front, .back {
+                    width: 300px;
+                    height: 480px;
+                }
+                /* flip speed goes here */
+                .flipper {
+                    transition: 0.6s;
+                    transform-style: preserve-3d;
+                    position: relative;
+                }
+                /* hide back of pane during swap */
+                .front, .back {
+                    backface-visibility: hidden;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                /* front pane, placed above back */
+                .front {
+                    z-index: 2;
+                    /* for firefox 31 */
+                    transform: rotateY(0deg);
+                }
+                /* back, initially hidden pane */
+                .back {
+                    transform: rotateY(180deg);
+                }
+</style>
+
+  <body>
+    <div class="row navbar-fixed">
+      <nav class="white">
+        <div class="nav-wrapper">
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text" style="font-size: 30px;">menu</i></a>
+          <a id="logo-container" href="index1.html" class="brand-logo1">Elite Global Services</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="index1.html" class="navlink color1">Home</a></li>
+            <li><a href="aboutus1.html" class="navlink">About Us</a></li>
+            <li><a href="contactus1.html" class="navlink">Contact Us</a></li>
+            <li><a href="services1.html" class="navlink">Services</a></li>
+            <li><a href="pastperformance.html" class="navlink">Past Performance</a></li>
+            <li><a href="blogs1.html" class="navlink">Blogs</a></li>
+            <li><a href="faqs1.html" class="navlink">FAQ's</a></li>
+          </ul>
+
+          <ul id="mobile-demo" class="side-nav">
+            <li><a id="logo-container" href="#" class="brand-logo1">Elite Global Services</a></li>
+            <li class="divider"></li>
+            <li><a href="index1.html" class="">Home</a></li>
+            <li><a href="aboutus1.html" class="">About Us</a></li>
+            <li><a href="contactus1.html" class="">Contact Us</a></li>
+            <li><a href="services1.html" class="">Services</a></li>
+            <li><a href="pastperformance.html" class="">Past Performance</a></li>
+            <li><a href="#" class="">Blogs</a></li>
+            <li><a href="faqs1.html" class="">FAQ's</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+      <div class="col s12 m12 l12">
+        <div class="slider fullscreen" style="margin-top: 40px;height: 91vh;">
+          <ul class="slides">
+            <li>
+              <img class="responsive-img" src="images/img4.jpg" style="opacity:0.6;"> <!-- random image -->
+              <div class="caption center-align">
+                <h4 class="black-text">Introducing New and Unique Concept Profit Sharing</h4>
+                <a class="card_button1" href="services1.html">Know More</a>
+              </div>
+            </li>
+            <li>
+              <img src="images/img5.jpg" style="opacity:0.6;"> <!-- random image -->
+              <div class="caption left-align">
+                <h4 class="black-text">If You Dont Take Risk For Your Success,Then Your Success Becomes A Risk. </h4>
+                <h5 class="black-text">Try our Profit Sharing Services.</h5>
+                <a class="card_button1" href="services1.html">View Services</a>
+              </div>
+            </li>
+            <li>
+              <img src="images/img6.jpg" style="opacity:0.6;"> <!-- random image -->
+              <div class="caption center-align">
+                <h4 class="black-text">Coming Together is a begininng; Keeping Together is Progress; Working Together is Success.</h4>
+                <h5 class="black-text">Check Out Our Past Performance</h5>
+                <a class="card_button1" href="pastperformance.html">Know More</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 91vh;">
+      <div class="card-panel deep-orange white-text center-align" style="border-radius:10px;margin: 5px;font-size: 30px;">
+        SERVICES
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m4 l4">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">     
+              <div class="row">
+                <div class="col s12 m12">
+                  <div class="card black darken-1">
+                    <div class="card-content white-text">
+                      <span class="card-title">Card Title</span>
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="back">      
+              <div class="row">
+                <div class="col s12">
+                  <div class="card white">
+                    <div class="card-content black-text">
+                      <span class="card-title">F&O SERVICES</span>
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container">
+      <div class="row center">
+        <div class="col s12 m4 l4">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="images/img7.jpg" alt="F&O SERVICES" style="width:300px;height:200px">
+
+              </div>
+              <div class="flip-box-back">
+                <img src="images/img7.jpg" alt="F&O SERVICES" style="width:300px;height:200px">
+                <h4 class="centered">F&O SERVICES</h4> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 l4">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="images/img8.jpg" alt="F&O SERVICES" style="width:300px;height:200px">
+              </div>
+              <div class="flip-box-back">
+                <img src="images/img8.jpg" alt="F&O SERVICES" style="width:300px;height:200px">
+                <h4 class="centered">MCX SERVICES</h4> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 l4">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="images/img9.jpg" alt="F&O SERVICES" style="width:300px;height:200px">
+              </div>
+              <div class="flip-box-back">
+                <img src="images/img9.jpg" alt="F&O SERVICES" style="width:300px;height:200px">
+                <h4 class="centered">PORTFOLIO MANAGEMENT</h4> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col s12 m4 l4">
+          <div class="square">
+            F&O SERVICES
+          </div>
+        </div>
+      </div>
+    </div> -->
+     <!-- Page Footer -->
+    <div class="row" style="margin-bottom: -20px;">
+      <footer class="page-footer black">
+        <div class="row center-align">
+          <div class="col s12 m12 l12">
+            <h4><a href="index.html" class="footerlogo">Elite Global Services</a></h4>
+            <!-- <p class="white-text">Information will be provided soon.</p> -->
+          </div>
+        </div>
+          <div class="row center-align font_1">
+            <div class="col s12 m12 l12">
+                <a href="index.html" class="link">Home<span class="white-text"> |</span></a> 
+                <a href="aboutus.html" class="link">About Us<span class="white-text"> |</span></a> 
+                  <a href="contactus.html" class="link">Contact Us<span class="white-text"> |</span></a> 
+                </div>
+            </div>  
+            <div class="row center-align">
+              <div id="social">
+                <a class="facebookBtn smGlobalBtn" href="#!"></a>
+                <a class="googleplusBtn smGlobalBtn" href="#!"></a>
+              </div>
+            </div>
+        <div class="row center-align marginReduce footer-copyright">
+          <div id="footertext" class="col s12 m12 l12">
+            &copy 2018 Copyright.All Rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+    });
+      $(document).ready(function(){
+    $('.slider').slider();
+  });
+         
+  </script>
+</html>

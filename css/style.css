@@ -1,0 +1,187 @@
+.brand-logo1{
+	color:#000000;
+	font-size: 28px;
+	transition:0.5s;
+  padding-left: 10px;
+}
+.brand-logo1:hover{
+	color:#ff5722;
+	font-size: 30px;
+	background:none;
+	transition: 0.5s;
+}
+.navlink{
+	color:#000000;
+	font-size:18px;
+	transition:0.5s;
+}
+.navlink:hover{
+	color:#ff5722;
+	font-size:20px;
+	background:none;
+	transition: 0.5s;
+}
+.contacttitle{
+  font-size: 36px;
+}
+
+/* Follow Icons */
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn {
+  /* global button class */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 2px 2px #999;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+.facebookBtn {
+  background: #4060A5;
+  margin-right: 10px;
+}
+
+.facebookBtn:before {
+  /* use :before to add the relevant icons */
+  font-family: "FontAwesome";
+  content: "\f09a";
+  /* add facebook icon */ 
+}
+
+.facebookBtn:hover {
+  color: #2196f3;
+  background: #111111;
+  transition-duration: 0.5s;
+  transition: background,color 0.5s ease;
+}
+
+
+
+/* google plus button class*/
+
+.googleplusBtn {
+  background: #e64522;
+}
+
+.googleplusBtn:before {
+  font-family: "FontAwesome";
+  content: "\f0d5";
+  /* add googleplus icon */
+}
+
+.googleplusBtn:hover {
+  color: #e64522;
+  background: #111111;
+  transition-duration: 0.5s;
+  transition: background,color 0.5s ease;
+}
+a.footerlogo{
+	color:#fff;
+  font-size: 32px;
+  transition: 0.6s;
+}
+a.footerlogo:hover{
+	color:#ff5722;
+  transition: 0.6s;
+}
+a.link                                                                  /* Footer Link */
+{
+  font-size: 20px;
+  transition-duration:0.6s;
+  color:white;
+}
+a.link:hover                                                            /* Footer Hover */
+{
+  transition: color 1s ease;
+  transition-duration: 0.5s;
+  color:#ff5722;
+}
+/*a.link{
+  color:#000;
+  font-size: 17px;
+  transition: 0.7s;
+}
+a.link:hover{
+  color:white;
+  font-size: 19px;
+  text-decoration: underline;
+  transition: 0.7s;
+}*/
+div.footer-copyright                                                    /* Footer Copyright */
+{
+  color: #2196f3;
+  transition-duration: 1s;
+}
+div.footer-copyright:hover                                              /* Footer hover  */
+{
+  transition:0.8s ease;
+  background-color: #ff5722;
+  font-size: 17px;
+}
+.material-font{
+  font-size: 16px;
+}
+.marginReduce{
+  margin-bottom: -20px;
+}
+.collapsible-header{
+  background-color: black;
+  color:#ff5722;
+}
+.collapsible-body{
+  font-size: 18px;
+  padding:15px;
+  background-color:none;
+  color: #000;
+}
+a.color1{
+  background-color: #ff5722;
+  color:#fff;
+}
+a.tabhover:hover{
+  background-color: #e0e0e0;
+}
+.card_button{
+  font-size: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  border:1px solid #white;
+  transition: 0.5s;
+  background:transparent;
+  color:#2196f3;
+  padding:5px 20px 5px 20px; 
+}
+.card_button:hover{
+  background-color: #ff5722;
+  color:white;
+  transition: 0.5s ease;
+
+}
+.card_button1{
+  font-size: 30px;
+  border-radius: 10px;
+  border:2px solid white;
+  transition: 0.5s;
+  background:black;
+  color:#2196f3;
+  padding:5px 20px 5px 20px; 
+}
+.card_button1:hover{
+  background-color: #ff5722;
+  color:white;
+  transition: 0.5s ease;
+}
